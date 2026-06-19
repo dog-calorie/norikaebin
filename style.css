@@ -29,7 +29,7 @@
     letter-spacing:0.01em;
     margin:0;
   }
-  .mono{font-family:'JetBrains Mono',monospace;}
+  .mono{font-family:'Zen Kaku Gothic New',sans-serif;}
   a{color:inherit;text-decoration:none;}
   .wrap{max-width:1040px;margin:0 auto;padding:0 24px;}
 
@@ -77,13 +77,13 @@
   /* GAUGE — signature element */
   .gauge-wrap{display:flex;justify-content:center;}
   .gauge{width:280px;}
-  .gauge-num{font-family:'JetBrains Mono',monospace;font-size:34px;font-weight:700;fill:var(--text);}
+  .gauge-num{font-family:'Zen Kaku Gothic New',sans-serif;font-size:34px;font-weight:700;fill:var(--text);}
   .gauge-label{font-family:'Noto Sans JP',sans-serif;font-size:12px;fill:var(--text-muted);}
 
   /* STAT STRIP */
   .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin:40px 0;}
   .stat{background:var(--surface);padding:20px 18px;text-align:center;}
-  .stat .v{font-family:'JetBrains Mono',monospace;font-size:22px;font-weight:700;color:var(--accent-text);}
+  .stat .v{font-family:'Zen Kaku Gothic New',sans-serif;font-size:22px;font-weight:700;color:var(--accent-text);}
   .stat .l{font-size:12px;color:var(--text-muted);margin-top:6px;}
 
   section{padding:64px 0;}
@@ -110,7 +110,7 @@
   .diag-progress{display:flex;align-items:center;gap:14px;margin-bottom:24px;}
   .diag-progress .track{flex:1;height:6px;background:var(--surface-2);border-radius:999px;overflow:hidden;}
   .diag-progress .fill{height:100%;background:var(--accent);width:0%;transition:width .35s ease;}
-  .diag-progress .count{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--text-muted);white-space:nowrap;}
+  .diag-progress .count{font-family:'Zen Kaku Gothic New',sans-serif;font-size:13px;color:var(--text-muted);white-space:nowrap;}
   .q-text{font-size:17px;font-weight:700;margin-bottom:20px;font-family:'Zen Kaku Gothic New',sans-serif;}
   .q-options{display:flex;flex-direction:column;gap:10px;}
   .opt-btn{
@@ -125,7 +125,7 @@
   .result{display:none;}
   .result .tag{font-size:11.5px;color:var(--accent-text);background:var(--accent-soft);padding:4px 10px;border-radius:999px;display:inline-block;margin-bottom:14px;}
   .result h3{font-size:22px;margin-bottom:10px;}
-  .result p.reason{color:var(--text-muted);font-size:14px;margin-bottom:22px;}
+  .result p.reason{color:var(--text);font-size:14.5px;font-weight:500;margin-bottom:22px;}
   .result .alt{margin-top:16px;font-size:13px;color:var(--text-muted);}
   .result .alt a{color:var(--accent-text);border-bottom:1px solid currentColor;}
 
@@ -135,7 +135,7 @@
   .rank-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;}
   .rank-head .name{font-size:14.5px;font-weight:700;margin:0;}
   .rank-head .name .medal{color:var(--accent-text);font-size:12px;font-weight:700;margin-right:6px;}
-  .rank-head .pct{font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;color:var(--accent-text);}
+  .rank-head .pct{font-family:'Zen Kaku Gothic New',sans-serif;font-size:15px;font-weight:700;color:var(--accent-text);}
   .rank-track{height:10px;background:var(--surface-2);border-radius:999px;overflow:hidden;margin-bottom:8px;}
   .rank-fill{height:100%;background:var(--accent);width:0%;border-radius:999px;transition:width .5s ease;}
   .rank-item.is-top .rank-fill{background:var(--accent);}
@@ -143,7 +143,7 @@
   .rank-item:not(.is-top) .rank-head .pct{color:var(--text-muted);}
   .rank-cta{display:inline-flex;font-size:12.5px;color:var(--text);border:1px solid var(--line);border-radius:8px;padding:7px 14px;}
   .rank-cta:hover{border-color:var(--accent-text);}
-  .restart{margin-top:18px;font-size:12.5px;color:var(--text-muted);cursor:pointer;display:inline-block;}
+  .restart{margin-top:18px;font-size:12.5px;color:var(--accent-text);cursor:pointer;display:inline-block;}
   .restart:hover{color:var(--text);}
 
   /* FAQ */
