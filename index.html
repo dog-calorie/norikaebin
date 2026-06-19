@@ -78,7 +78,7 @@
           <li>累計利用者数は1,000万人を超える</li>
         </ul>
         <a class="btn btn-primary btn-block" href="https://www.insweb.co.jp/car/" id="link-insweb" rel="nofollow sponsored">公式サイトで見積もる(PR)</a>
-        <p class="reassure">最短3分の入力で見積もり依頼が完了・その場で金額がわかる</p>
+        <p class="reassure">★最短3分の入力で見積もり依頼が完了・その場で金額がわかる</p>
       </div>
       <div class="card">
         <span class="tag">老舗・実績重視</span>
@@ -91,7 +91,7 @@
           <li>満期日まで1日以上90日未満の契約が見積もり対象</li>
         </ul>
         <a class="btn btn-primary btn-block" href="https://www.bang.co.jp/" id="link-bang" rel="nofollow sponsored">公式サイトで見積もる(PR)</a>
-        <p class="reassure">1998年からの実績・事故時の弁護士相談特典つき</p>
+        <p class="reassure">★無料の弁護士相談サービス特典あり</p>
       </div>
       <div class="card">
         <span class="tag">使いやすさ重視</span>
@@ -104,7 +104,7 @@
           <li>規約上、郵送・電話・メール等での案内に利用される場合がある</li>
         </ul>
         <a class="btn btn-primary btn-block" href="https://hoken.kakaku.com/kuruma_hoken/" id="link-kakaku" rel="nofollow sponsored">公式サイトで見積もる(PR)</a>
-        <p class="reassure">わずか4ページの直感的なフォーム</p>
+        <p class="reassure">★わずか4ページの直感的なフォーム</p>
       </div>
     </div>
   </section>
@@ -198,7 +198,7 @@
   <div class="wrap">
     <div class="footer-row">
       <span>PR ー 本ページのリンクには提携サービスへのアフィリエイトリンクを含みます</span>
-      <span>プライバシーポリシー ｜ 運営者情報</span>
+      <span><a href="privacy.html">プライバシーポリシー</a> ｜ <a href="affiliate-disclosure.html">アフィリエイト開示</a></span>
     </div>
     <p class="footer-note">掲載内容は確認時点の公式情報に基づき作成していますが、保険料・サービス内容・キャンペーン等は変更される場合があります。お申し込み前に必ず各社の公式サイトで最新の情報をご確認ください。</p>
   </div>
@@ -266,9 +266,9 @@
   ];
 
   const SERVICES = {
-    insweb: { name: "インズウェブ", blurb: "比較できる保険会社数の多さと、画面上ですぐ結果を確認できる点が強みです。", reassure: "最短3分の入力で見積もり依頼が完了・その場で金額がわかる" },
-    bang:   { name: "保険スクエアbang!", blurb: "1998年からの老舗実績と、事故時の弁護士相談特典が強みです。満期日まで90日以内であることが利用の条件です。", reassure: "1998年からの実績・事故時の弁護士相談特典つき" },
-    kakaku: { name: "価格.com", blurb: "直感的な操作のしやすさと、運営会社自身は勧誘を一切行わないと明言している点が強みです。", reassure: "わずか4ページの直感的なフォーム" }
+    insweb: { name: "インズウェブ", blurb: "比較できる保険会社数の多さと、画面上ですぐ結果を確認できる点が強みです。", note: "★最短3分の入力で見積もり依頼が完了・その場で金額がわかる" },
+    bang:   { name: "保険スクエアbang!", blurb: "1998年からの老舗実績と、事故時の弁護士相談特典が強みです。満期日まで90日以内であることが利用の条件です。", note: "★無料の弁護士相談サービス特典あり" },
+    kakaku: { name: "価格.com", blurb: "直感的な操作のしやすさと、運営会社自身は勧誘を一切行わないと明言している点が強みです。", note: "★わずか4ページの直感的なフォーム" }
   };
 
   // max achievable points per service, derived from the question data itself
@@ -423,7 +423,7 @@
         <div class="rank-track"><div class="rank-fill" style="width:${item.pct}%"></div></div>
         <p style="font-size:13px;color:var(--text-muted);margin:0 0 10px;">${item.blurb}</p>
         <a class="rank-cta" href="${AFFILIATE_LINKS[item.key]}" rel="nofollow sponsored">${item.name}を見積もる(PR)</a>
-        <p class="reassure" style="text-align:left;margin-top:6px;">${SERVICES[item.key].reassure}</p>
+        <p class="reassure" style="text-align:left;margin-top:6px;">${SERVICES[item.key].note}</p>
       </div>
     `;
     }).join('');

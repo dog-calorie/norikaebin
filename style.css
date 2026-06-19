@@ -156,6 +156,7 @@
 
   footer{padding:36px 0 48px;}
   .footer-row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:12px;color:var(--text-muted);}
+  .footer-row a:hover{color:var(--accent-text);}
   .footer-note{font-size:12px;color:var(--text-muted);margin-top:14px;line-height:1.6;}
 
   @media (max-width: 760px){
