@@ -309,9 +309,9 @@
   ];
 
   const SERVICES = {
-    insweb: { name: "インズウェブ", blurb: "比較できる保険会社数の多さと、画面上ですぐ結果を確認できる点が強みです。", note: "★最短3分の入力で見積もり依頼が完了・その場で金額がわかる" },
-    bang:   { name: "保険スクエアbang!", blurb: "1998年からの老舗実績と、事故時の弁護士相談特典が強みです。満期日まで90日以内であることが利用の条件です。", note: "★無料の弁護士相談サービス特典あり" },
-    kakaku: { name: "価格.com", blurb: "直感的な操作のしやすさと、運営会社自身は勧誘を一切行わないと明言している点が強みです。", note: "★わずか4ページの直感的なフォーム" }
+    insweb: { name: "インズウェブ", blurb: "比較できる保険会社数の多さと、画面上ですぐ結果を確認できる点が強みです。", note: "★最短3分の入力で見積もり依頼が完了・その場で金額がわかる", cta: "最大20社を比較できる", color: "#1c6bff", prLabel: "" },
+    bang:   { name: "保険スクエアbang!", blurb: "1998年からの老舗実績と、事故時の弁護士相談特典が強みです。満期日まで90日以内であることが利用の条件です。", note: "★無料の弁護士相談サービス特典あり", cta: "老舗×弁護士相談特典で選ぶ", color: "#e85d04", prLabel: "" },
+    kakaku: { name: "価格.com", blurb: "直感的な操作のしやすさと、運営会社自身は勧誘を一切行わないと明言している点が強みです。", note: "★わずか4ページの直感的なフォーム", cta: "使いやすさ・勧誘なしで選ぶ", color: "#12805c", prLabel: "(PR)" }
   };
 
   // max achievable points per service, derived from the question data itself
@@ -465,7 +465,7 @@
         </div>
         <div class="rank-track"><div class="rank-fill" style="width:${item.pct}%"></div></div>
         <p style="font-size:13px;color:var(--text-muted);margin:0 0 10px;">${item.blurb}</p>
-        <a class="rank-cta" href="${AFFILIATE_LINKS[item.key]}" rel="nofollow sponsored">${item.name}を見積もる(PR)</a>
+        <a class="rank-cta" href="${AFFILIATE_LINKS[item.key]}" rel="nofollow sponsored" style="font-weight:800;border:3px solid ${SERVICES[item.key].color};">${SERVICES[item.key].cta}${SERVICES[item.key].prLabel}</a>
         <p class="reassure" style="text-align:left;margin-top:6px;">${SERVICES[item.key].note}</p>
       </div>
     `;
